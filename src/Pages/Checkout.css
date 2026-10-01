@@ -1,0 +1,639 @@
+
+/* =========================
+   CHECKOUT PAGE
+========================= */
+
+.checkout-page {
+  min-height: 100vh;
+  background: #faf7f8;
+  padding: 50px 7%;
+  font-family: Arial, sans-serif;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.checkout-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.checkout-heading p {
+  color: #b76e79;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+}
+
+.checkout-heading h1 {
+  font-size: 42px;
+  margin: 0 0 10px;
+  color: #2d2426;
+}
+
+.checkout-heading span {
+  color: #777;
+  font-size: 15px;
+}
+
+/* =========================
+   MESSAGE
+========================= */
+
+.checkout-message {
+  max-width: 1100px;
+  margin: 0 auto 25px;
+  padding: 15px 20px;
+  background: #f6dfe3;
+  color: #8d4552;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.checkout-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 35px;
+  align-items: start;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.checkout-form {
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+}
+
+.checkout-form h2 {
+  color: #2d2426;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #403638;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #b76e79;
+  box-shadow: 0 0 0 2px rgba(183, 110, 121, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* =========================
+   FORM ROW
+========================= */
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* =========================
+   PAYMENT
+========================= */
+
+.payment-title {
+  margin-top: 35px !important;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.payment-option:hover {
+  border-color: #b76e79;
+  background: #fffafb;
+}
+
+.payment-option input {
+  margin-top: 3px;
+  accent-color: #b76e79;
+}
+
+.payment-option div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.payment-option strong {
+  color: #333;
+  font-size: 14px;
+}
+
+.payment-option span {
+  color: #777;
+  font-size: 12px;
+}
+
+/* =========================
+   PLACE ORDER
+========================= */
+
+.place-order-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 7px;
+  background: #b76e79;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.place-order-button:hover {
+  background: #9f5a66;
+}
+
+/* =========================
+   BACK TO CART
+========================= */
+
+.back-cart-button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  background: white;
+  color: #555;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-cart-button:hover {
+  border-color: #b76e79;
+  color: #b76e79;
+}
+
+/* =========================
+   ORDER SUMMARY
+========================= */
+
+.checkout-summary {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 20px;
+}
+
+.checkout-summary h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #2d2426;
+}
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.checkout-products {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.checkout-product {
+  display: flex;
+  gap: 14px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #eee;
+}
+
+.checkout-product img {
+  width: 75px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.checkout-product-info {
+  flex: 1;
+}
+
+.checkout-product-info h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.checkout-product-info p {
+  margin: 0 0 8px;
+  color: #777;
+  font-size: 12px;
+}
+
+.checkout-product-info span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* =========================
+   SUMMARY DETAILS
+========================= */
+
+.checkout-summary-details {
+  margin-top: 25px;
+}
+
+.checkout-summary-details > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: #555;
+  font-size: 14px;
+}
+
+.checkout-summary-details hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
+.checkout-summary-details .checkout-total {
+  color: #222;
+  font-size: 18px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .checkout-container {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-summary {
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .checkout-page {
+    padding: 30px 15px;
+  }
+
+  .checkout-heading h1 {
+    font-size: 32px;
+  }
+
+  .checkout-form,
+  .checkout-summary {
+    padding: 22px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  
+
+}
+/* =========================
+   VALIDATION ERROR
+========================= */
+
+.error-message {
+  display: block;
+  color: #d9534f;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+
+/* =========================
+   SUCCESS POPUP OVERLAY
+========================= */
+
+.success-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+
+/* =========================
+   SUCCESS POPUP
+========================= */
+
+.success-popup {
+  width: 380px;
+  max-width: 90%;
+
+  background: white;
+  border-radius: 15px;
+
+  padding: 40px 30px;
+
+  text-align: center;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+
+  animation: popupAnimation 0.3s ease;
+}
+
+
+/* =========================
+   SUCCESS ICON
+========================= */
+
+.success-icon {
+  width: 65px;
+  height: 65px;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+
+  background: #b76e79;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+/* =========================
+   POPUP TEXT
+========================= */
+
+.success-popup h2 {
+  margin: 0 0 10px;
+
+  color: #2d2426;
+
+  font-size: 25px;
+}
+
+.success-popup p {
+  margin: 0 0 10px;
+
+  color: #555;
+
+  font-size: 15px;
+}
+
+.success-popup span {
+  color: #999;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   POPUP ANIMATION
+========================= */
+
+@keyframes popupAnimation {
+
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+}
+
+/* =========================================
+   PAYMENT DETAILS
+========================================= */
+
+.payment-details-box {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.payment-details-box h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+
+/* =========================================
+   UPI PAYMENT
+========================================= */
+
+.upi-payment-container {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 30px;
+  align-items: center;
+}
+
+.upi-input-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.upi-input-section input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.upi-input-section input:focus {
+  border-color: #222;
+}
+
+.upi-input-section > small:not(.error-message) {
+  display: block;
+  margin-top: 7px;
+  color: #777;
+  font-size: 12px;
+}
+
+.verify-upi-button {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.verify-upi-button:hover {
+  background: #444;
+}
+
+
+/* =========================================
+   QR CODE
+========================================= */
+
+.upi-qr-section {
+  text-align: center;
+}
+
+.upi-qr-section p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.qr-code-box {
+  width: 190px;
+  height: 190px;
+  margin: auto;
+  padding: 5px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-code-box img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.upi-qr-section span {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #777;
+}
+
+
+/* =========================================
+   CARD PAYMENT
+========================================= */
+
+.card-payment-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.card-payment-row .form-group {
+  margin-bottom: 0;
+}
+
+.card-secure-message {
+  margin-top: 15px;
+  padding: 11px;
+  border-radius: 6px;
+  background: #edf8ed;
+  color: #357a35;
+  font-size: 13px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .upi-payment-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .upi-qr-section {
+    margin-top: 10px;
+  }
+
+  .card-payment-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+}
+
+

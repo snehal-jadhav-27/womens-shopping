@@ -1,0 +1,117 @@
+.sale-page {
+  padding: 60px 8%;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.sale-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sale-heading p {
+  color: #d6336c;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.sale-heading h1 {
+  font-size: 42px;
+  margin: 10px 0;
+  color: #222;
+}
+
+.sale-heading span {
+  color: #777;
+}
+
+.sale-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.sale-card {
+  background: #fff;
+  border: 1px solid #eee;
+  padding-bottom: 20px;
+  transition: 0.3s;
+}
+
+.sale-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.sale-image {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.sale-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sale-image span {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #d6336c;
+  color: white;
+  padding: 7px 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.sale-card h3 {
+  padding: 0 15px;
+  margin-top: 18px;
+  font-size: 17px;
+}
+
+.price {
+  padding: 0 15px;
+  margin: 10px 0;
+}
+
+.price strong {
+  color: #d6336c;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.price del {
+  color: #999;
+}
+
+.sale-card button {
+  margin: 10px 15px 0;
+  width: calc(100% - 30px);
+  padding: 12px;
+  border: none;
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+.sale-card button:hover {
+  background: #d6336c;
+}
+
+@media (max-width: 900px) {
+  .sale-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .sale-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cart-message { position: fixed; top: 90px; right: 30px; background: #222; color: white; padding: 14px 22px; border-radius: 8px; z-index: 1000; font-size: 14px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
